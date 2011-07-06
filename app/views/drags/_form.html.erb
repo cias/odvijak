@@ -1,0 +1,33 @@
+<%= form_for(@drag) do |f| %>
+  <% if @drag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@drag.errors.count, "error") %> prohibited this drag from being saved:</h2>
+
+      <ul>
+      <% @drag.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.time_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :place %><br />
+    <%= f.text_area :place %>
+  </div>
+  <div class="field">
+    <%= f.label :drager %><br />
+    <%= f.text_area :drager %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

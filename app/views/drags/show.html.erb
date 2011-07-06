@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @drag.date %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @drag.time %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @drag.place %>
+</p>
+
+<p>
+  <b>Drager:</b>
+  <%= @drag.drager %>
+</p>
+
+
+<%= link_to 'Edit', edit_drag_path(@drag) %> |
+<%= link_to 'Back', drags_path %>

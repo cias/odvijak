@@ -1,0 +1,2 @@
+module DragsHelper
+end

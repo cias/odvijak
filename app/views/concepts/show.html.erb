@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @concept.date %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @concept.time %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @concept.place %>
+</p>
+
+<p>
+  <b>Pilot:</b>
+  <%= @concept.pilot %>
+</p>
+
+
+<%= link_to 'Edit', edit_concept_path(@concept) %> |
+<%= link_to 'Back', concepts_path %>

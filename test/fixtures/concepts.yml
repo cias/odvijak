@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2011-07-06
+  time: 2011-07-06 23:18:44
+  place: MyText
+  pilot: MyText
+
+two:
+  date: 2011-07-06
+  time: 2011-07-06 23:18:44
+  place: MyText
+  pilot: MyText

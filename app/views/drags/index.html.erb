@@ -1,0 +1,29 @@
+<h1>Listing drags</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Place</th>
+    <th>Drager</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @drags.each do |drag| %>
+  <tr>
+    <td><%= drag.date %></td>
+    <td><%= drag.time %></td>
+    <td><%= drag.place %></td>
+    <td><%= drag.drager %></td>
+    <td><%= link_to 'Show', drag %></td>
+    <td><%= link_to 'Edit', edit_drag_path(drag) %></td>
+    <td><%= link_to 'Destroy', drag, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Drag', new_drag_path %>
